@@ -1,14 +1,24 @@
-# EDA-attack-on-titanic
-In this notebook, I conducted an exploratory data analysis on the Titanic datasets extracted from [Kaggle](https://www.kaggle.com/competitions/titanic), with focus on gathering relevant analyses, patterns, and insights. This work is intended to serve as a well-grounded foundation which will be helpful in generating the model to predict the solution goal further down the line.  
+# Titanic Solution Beginner Walkthrough
 
-## Specific Objectives
-The purpose of the notebook is to practice Exploratory Data Analysis and Visualization in line with going through the following workflow stages:
-- **Comprehend.** Understand the nature and relationships among each features in the datasets
-- **Correlate.** Validate the strength of association across features with the appopriate statistical tools and metrics based on the distributions and data types of the features.
-- **Control.** Identify and remedy the missing/null values. May consider imputing them for features that are deemed significant.  
-- **Convert.** Perform the necessary adjustments (i.e. one-hot encoding) to make the datasets appropriate for modelling.
-- **Create.** Create new features out of the given features that may follow and improve the correlations with the solution goal.
-- **Conclude.** Generate the final training set with the significantly correlated features ready for modelling.
+The purpose of this notebook is to show how I have navigated through the Kaggle Titanic project by following an effective Data Science Workflow.
+
+I will always treat this notebook as a **work in progress** because I will continuously seek to improve my work as I gain more knowledge and understanding throughout my Data Science learning journey.
+
+## Data Science Workflow
+> The foundation of this workflow was based on the author's citations in this [notebook](https://www.kaggle.com/code/ldfreeman3/a-data-science-framework-to-achieve-99-accuracy/notebook). I figured there was still room for more C's.
+- **Comprehend.** *Exploratory Data Analysis.* Understand the nature and relationships among each features in the datasets through data analyses and visualization.
+- **Correlate.** *Feature Selection* Validate the strength of association across features with the appopriate statistical tools and metrics, and to select the features that are significantly relevant with the solution goal.
+- **Clean.** *Data Cleaning.* Identify and remedy missing/null values by imputing them with reasonable inputs.  
+- **Create.** *Feature Engineering.* Create new features out of the existing ones which can make better predictions while also reducing noise in the number of features.
+- **Classify.** *Feature Engineering.* Practice more advanced feature engineering involving effectively classifying labels/classes that are similar in terms of distribution, which also aims to reduce noise.
+- **Convert.** *Data Preprocessing.* Perform the necessary adjustments (one-hot encoding) and data transformations (i.e. sqrt, log trasformations) to make the data fit for modelling.
+- **Complete.** *Training Model.* Completion of a working and cleaned dataset in preparation for training the model and predicting solutions out of it. 
+- **Configure.** *Hyperparameter Tuning.* Further optimize our learning algorithms by determining and running the optimal parameters. 
+- **Combine.** *Ensemble Learning.* Combine multiple algorithms into one that can leverage the strengths and compensates the weaknesses of the tested models.
+
+## Assumptions
+To prevent **data leakage and cheating,** analyses and data transformations will exclusively be done and derived based on training data alone without the support of the test data.
+> Data leakage happens when information outside of train set was used to assist in creating model. While there is merits to substantially achieve higher scores on our train and validation sets alone, this model will usually result in poorer performances when ran on other testing sets that are **new** and **unseen.** 
 
 ## Background of the Problem
 The complete overview and description of the Kaggle competition be found [here](https://www.kaggle.com/c/titanic). Here are some of information we were provided with the link.
